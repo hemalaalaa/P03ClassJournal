@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String moduleValues=(String)lvMod.getItemAtPosition(position);
                 Intent intent = new Intent(MainActivity.this, Activity1.class);
+                intent.putExtra("code", moduleValues);
                 startActivity(intent);
             }
         });
