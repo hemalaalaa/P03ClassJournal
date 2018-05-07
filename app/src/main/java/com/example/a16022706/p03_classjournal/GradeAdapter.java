@@ -40,6 +40,6 @@ public class GradeAdapter extends ArrayAdapter<DailyCA> {
         tvGrade.setText(currentGrade.getDgGrade());
 
         return rowView;
+
     }
 }
-
