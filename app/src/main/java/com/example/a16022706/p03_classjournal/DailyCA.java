@@ -7,10 +7,12 @@ public class DailyCA implements Serializable {
     private String moduleCode;
     private int week;
 
-    public DailyCA(String dgGrade, String moduleCode, int week) {
+    public DailyCA(String dgGrade, String moduleCode) {
         this.dgGrade = dgGrade;
         this.moduleCode = moduleCode;
-        this.week = week;
+    }
+
+    public DailyCA(int i, String b) {
     }
 
     public String getDgGrade() {

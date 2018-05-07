@@ -5,6 +5,7 @@
     android:orientation="vertical">
 
     <ListView
+        android:id="@+id/listview"
         android:layout_width="match_parent"
         android:layout_height="462dp">
 
@@ -20,7 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Back" />
+            android:text="Info" />
 
         <Button
             android:id="@+id/buttonAdd"
@@ -28,7 +29,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Add" />
-
         <Button
             android:id="@+id/btnEmail"
             android:layout_width="wrap_content"
