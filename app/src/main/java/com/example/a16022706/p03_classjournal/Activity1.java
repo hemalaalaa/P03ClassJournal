@@ -1,8 +1,10 @@
 package com.example.a16022706.p03_classjournal;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -45,5 +47,18 @@ public class Activity1 extends AppCompatActivity {
         }
         aa = new GradeAdapter(this, R.layout.activity_row, grade);
         lv.setAdapter(aa);
+
+
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                // Intent to display data
+                Intent rpIntent = new Intent(Intent.ACTION_VIEW);
+                // Set the URL to be used.
+                rpIntent.setData(Uri.parse("http://www.rp.edu.sg"));
+                startActivity(rpIntent);
+            }
+        });
+
     }
 }
