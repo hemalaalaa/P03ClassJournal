@@ -45,7 +45,7 @@ public class Activity1 extends AppCompatActivity {
         } else if (code.equalsIgnoreCase("C302")) {
             grade.add(new DailyCA(1, "E"));
         }
-        aa = new GradeAdapter(this, R.layout.activity_row, grade);
+        aa = new GradeAdapter(this, R.layout.activity_view_row, grade);
         lv.setAdapter(aa);
 
         btnEmail.setOnClickListener(new View.OnClickListener() {
