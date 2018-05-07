@@ -90,6 +90,16 @@ public class Activity1 extends AppCompatActivity {
             }
         });
 
+        btnAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int dg2 = grade.size()+1;
+                Intent i = new Intent(Activity1.this,AddGrade.class);
+                i.putExtra("week", dg2);
+                startActivityForResult(i, requestCodeForAdd);
+            }
+        });
+
 
 
     }
