@@ -75,8 +75,21 @@ public class Activity1 extends AppCompatActivity {
                         "Choose an Email client :"));
 
 
+
             }
         });
+
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                // Intent to display data
+                Intent rpIntent = new Intent(Intent.ACTION_VIEW);
+                // Set the URL to be used.
+                rpIntent.setData(Uri.parse("http://www.rp.edu.sg"));
+                startActivity(rpIntent);
+            }
+        });
+
 
 
     }
