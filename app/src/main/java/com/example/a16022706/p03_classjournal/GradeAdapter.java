@@ -16,11 +16,12 @@ public class GradeAdapter {
         private TextView tvWeek;
         private TextView tvGrade;
 
-        public InfoAdapter(Context context, int resource, ArrayList<DailyCA> objects){
+        public InfoAdapter(Context context, int resource, ArrayList<DailyCA> objects) {
             super(context, resource, objects);
             info = objects;
             this.context = context;
         }
+
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
             // The usual way to get the LayoutInflater object to
@@ -41,4 +42,5 @@ public class GradeAdapter {
 
             return rowView;
         }
+    }
 }
